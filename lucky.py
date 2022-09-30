@@ -11,7 +11,7 @@ Test task
 
 import re 
 
-def fun(num:int)->list:
+def fun(num:int)->int:
   result=[]
   match=re.findall(r'([5-6]{2,})',str(num))
   if len(match)==0:
