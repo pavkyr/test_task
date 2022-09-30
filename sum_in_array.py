@@ -15,9 +15,9 @@ def f(array:list,res:int)->list:
   left_p,right_p=0,len(l)-1
 
   while left_p<right_p:
-    sum=l[left_p]+l[right_p]
+    sum=array[left_p]+array[right_p]
     if sum==res:
-      return [l[left_p],l[right_p]]
+      return [array[left_p],array[right_p]]
     if sum<res:
       left_p+=1
     else:
